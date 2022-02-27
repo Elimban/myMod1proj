@@ -1,9 +1,13 @@
 {
   "item.myfirstmod.diamond" : "Funkeldings",
   "item.myfirstmod.smile" : "Lach Mal",
+  "item.myfirstmod.dowsing_rod": "WünschDirWas",
+
   "block.myfirstmod.diamond_block" : "Funkelblock",
   "block.myfirstmod.raw_diamond_block" : "Funkel weniger",
   "block.myfirstmod.diamond_ore" : "boah, wasdasdenn?",
+
+  "item.myfirstmod.dowsing_rod.no_valuables": "War wohl nix",
 
   "itemGroup.mymodtab" : "mein Kram"
 }
