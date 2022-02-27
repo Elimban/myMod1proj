@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "myfirstmod:diamond_block",
+    "myfirstmod:diamond_ore",
+    "myfirstmod:raw_diamond_block"
+  ]
+}

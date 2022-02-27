@@ -1,5 +1,6 @@
 package com.elimbanmodder.myfirstmod.block;
 
+import com.elimbanmodder.myfirstmod.Item.ModCreativeModeTab;
 import com.elimbanmodder.myfirstmod.Item.ModItems;
 import com.elimbanmodder.myfirstmod.TheMod;
 import net.minecraft.world.item.BlockItem;
@@ -21,15 +22,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DIAMOND_BLOCK = registerBlock("diamond_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.MY_MOD_TAB);
 
     public static final RegistryObject<Block> RAW_DIAMOND_BLOCK = registerBlock("raw_diamond_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(7f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTab.MY_MOD_TAB);
 
     public static final RegistryObject<Block> DIAMOND_ORE = registerBlock("diamond_ore",
             ()-> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MY_MOD_TAB);
 
 
     public static void register (IEventBus eventBus){
@@ -41,12 +42,10 @@ public class ModBlocks {
         registerBlockItem(name,toReturn,tab);
 
         return toReturn;
-
     }
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem (String name, RegistryObject<T> block,
                                                                             CreativeModeTab tab){
         return ModItems.ITEMS.register(name, ()-> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-
     }
 }

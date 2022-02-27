@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "myfirstmod:diamond_block"
+    }
+  ],
+  "result": {
+    "item": "myfirstmod:diamond",
+    "count": 9
+  }
+}
